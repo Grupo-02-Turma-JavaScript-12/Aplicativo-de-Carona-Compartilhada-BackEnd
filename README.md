@@ -1,8 +1,8 @@
 <p align="center">
-<img alig src="https://raw.githubusercontent.com/Grupo-02-Turma-JavaScript-12/AplicativoFitnessPersonalizado-backend/refs/heads/main/src/assets/MoveUp.png" width="300" alt="MoveUP Logo" />
+<img alig src="https://raw.githubusercontent.com/Grupo-02-Turma-JavaScript-12/Aplicativo-de-Carona-Compartilhada-BackEnd/refs/heads/main/src/assets/logo_meleva.png" width="300" alt="MeLeva Logo" />
 </p>
 
-##  MeLeva – Conectando Pessoas, Facilitando Caminhos
+#  MeLeva – Conectando Pessoas, Facilitando Caminhos
 
 <p>
 O MeLeva é uma aplicação de carona compartilhada desenvolvida para tornar a mobilidade urbana mais prática, econômica e sustentável. A ideia é simples: aproximar motoristas e passageiros que compartilham trajetos semelhantes, promovendo uma experiência segura, acessível e colaborativa.
@@ -147,9 +147,64 @@ Serviço responsável por gerenciar as operações relacionadas aos usuários.
 
 ## Testes Realizados no Insomnia
 
+````
+Testes realizados na Entidade Usuário
+````
+#### Consultar todos usuários
+<img width="1919" height="982" alt="image" src="https://github.com/user-attachments/assets/c5ad1834-4e58-46c3-b893-06f5b10c3371" />
+
+#### Consultar Usuários por ID
+<img width="1919" height="985" alt="image" src="https://github.com/user-attachments/assets/d522c30b-cb8c-4019-9201-c1b3d3d33ad3" />
+
+#### Cadastrar Usuário
+<img width="1919" height="984" alt="image" src="https://github.com/user-attachments/assets/65b08df3-3c18-490f-9417-3db453865702" />
+
+#### Atualizar Usuário
+<img width="1919" height="986" alt="image" src="https://github.com/user-attachments/assets/ddfb7a4c-4596-46de-85b5-f282f8944b98" />
+
+#### Deletar Usuário
+<img width="1919" height="987" alt="image" src="https://github.com/user-attachments/assets/47541c60-5693-41fb-bd7a-5f32468f3993" /><br>
+___
+
+````
+Testes realizados na Entidade Carona
+````
+#### Consultar Caronas
+<img width="1919" height="984" alt="image" src="https://github.com/user-attachments/assets/b7fcaacf-d226-45d6-bfc4-84a6df709662" />
 
 
+#### Consultar Caronas por ID
+<img width="1919" height="981" alt="image" src="https://github.com/user-attachments/assets/c9e3f856-f9cf-45ac-9b93-f963cefd4c35" />
 
+#### Consultar caronas por Destino
+<img width="1919" height="983" alt="image" src="https://github.com/user-attachments/assets/5ea2ce32-e58c-409a-a683-184455ecc953" />
+
+#### Calcular Tempo de Viagem
+<img width="1919" height="980" alt="image" src="https://github.com/user-attachments/assets/82209434-e2ca-414e-ae1a-b59e5bd1a56e" />
+
+#### Cadastrar Carona
+<img width="1919" height="984" alt="image" src="https://github.com/user-attachments/assets/1eb92b47-6d3d-4c27-a41b-31bf75db724c" />
+
+#### Deletar Carona
+<img width="1919" height="981" alt="image" src="https://github.com/user-attachments/assets/ee51e321-cfd7-4d93-aaf1-fef0f0b9fcd5" /><br>
+___
+````
+Testes realizados na Entidade Reserva
+````
+#### Consultar todas as Reservas
+<img width="1919" height="984" alt="image" src="https://github.com/user-attachments/assets/644293bd-de79-4ff4-9815-aa8b6cdf4115" />
+
+#### Cadastrar Reservas
+<img width="1919" height="985" alt="image" src="https://github.com/user-attachments/assets/274a90b5-d21b-4a76-8916-0866b4f8ea34" />
+
+#### Consultar Reservas por ID
+<img width="1919" height="983" alt="image" src="https://github.com/user-attachments/assets/7a16f489-a1a5-441c-b87c-9ec470d3be1d" />
+
+#### Atualizar Reservas
+<img width="1919" height="984" alt="image" src="https://github.com/user-attachments/assets/e836e9d1-6440-4a55-935f-41c92d01c7e6" />
+
+#### Deletar Reservas
+<img width="1919" height="984" alt="image" src="https://github.com/user-attachments/assets/9337d907-9353-4cdf-abd6-948239c0a47d" />
 
 
 ## Instalação do Projeto
@@ -182,4 +237,4 @@ $ npm run start:prod
 
 ## Licença
 
-MoveUP is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+MeLeva is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
