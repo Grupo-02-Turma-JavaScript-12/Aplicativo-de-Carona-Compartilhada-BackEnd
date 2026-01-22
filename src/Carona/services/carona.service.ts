@@ -35,6 +35,27 @@ export class CaronaService {
     });
   }
 
+  calcularTempoViagem(
+    distancia: number,
+    velocidade: number,
+  ): { tempo_estimado: string } {
+    if (distancia <= 0 || velocidade <= 0) {
+      throw new HttpException(
+        'Distância e velocidade devem ser maiores que zero',
+        HttpStatus.BAD_REQUEST,
+      );
+    }
+
+    const tempoEmHoras = distancia / velocidade;
+
+    const horas = Math.floor(tempoEmHoras);
+    const minutos = Math.round((tempoEmHoras - horas) * 60);
+
+    return {
+      tempo_estimado: `${horas}h ${minutos}min`,
+    };
+  }
+
   async create(carona: Carona): Promise<Carona> {
     return await this.caronaRepository.save(carona);
   }

@@ -7,7 +7,7 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { Reserva } from '../../Reserva/entities/reserva.entity';
-import { Usuario } from '../../Usuario/entities/usuario.entity';
+import { Usuario } from '../../usuario/entities/usuario.entity';
 
 @Entity({ name: 'tb_caronas' })
 export class Carona {

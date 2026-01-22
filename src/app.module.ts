@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Usuario } from './Usuario/entities/usuario.entity';
-import { UsuarioModule } from './Usuario/usuario.module';
+import { CaronaModule } from './Carona/carona.module';
 import { Carona } from './Carona/entities/carona.entity';
 import { Reserva } from './Reserva/entities/reserva.entity';
-import { CaronaModule } from './Carona/carona.module';
 import { ReservaModule } from './Reserva/reserva.module';
+import { Usuario } from './usuario/entities/usuario.entity';
+import { UsuarioModule } from './usuario/usuario.module';
 
 @Module({
   imports: [
@@ -15,7 +15,7 @@ import { ReservaModule } from './Reserva/reserva.module';
       port: 3306,
       username: 'root',
       password: 'root',
-      database: 'db_meleva',
+      database: 'db_app_me_leva',
       entities: [Usuario, Carona, Reserva],
       synchronize: true,
     }),
