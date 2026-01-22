@@ -15,7 +15,7 @@ import { UsuarioModule } from './usuario/usuario.module';
       port: 3306,
       username: 'root',
       password: 'root',
-      database: 'db_app_me_leva',
+      database: 'db_meleva',
       entities: [Usuario, Carona, Reserva],
       synchronize: true,
     }),
