@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { CaronaModule } from './Caronas/carona.module';
-import { Carona } from './Caronas/entities/carona.entity';
+import { UsuarioModule } from './usuario/usuario.module';
+import { Usuario } from './usuario/entities/usuario.entity';
 
 @Module({
   imports: [
@@ -11,12 +11,13 @@ import { Carona } from './Caronas/entities/carona.entity';
       port: 3306,
       username: 'root',
       password: 'root',
-      database: 'db_app_me_leva',
-      entities: [Carona],
+      database: 'db_meleva',
+      entities: [Usuario],
       synchronize: true,
     }),
-    CaronaModule,
+    UsuarioModule,
   ],
+
   controllers: [],
   providers: [],
 })
