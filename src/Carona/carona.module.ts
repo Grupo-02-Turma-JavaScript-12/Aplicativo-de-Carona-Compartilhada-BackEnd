@@ -8,6 +8,6 @@ import { CaronaController } from './controllers/carona.controller';
   imports: [TypeOrmModule.forFeature([Carona])],
   providers: [CaronaService],
   controllers: [CaronaController],
-  exports: [],
+  exports: [CaronaService],
 })
 export class CaronaModule {}

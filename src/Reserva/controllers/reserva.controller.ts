@@ -10,8 +10,8 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
-import { ReservaService } from '../services/reservas.service';
-import { Reserva } from '../entities/reservas.entity';
+import { Reserva } from '../entities/reserva.entity';
+import { ReservaService } from '../services/reserva.service';
 
 @Controller('/reservas')
 export class ReservaController {

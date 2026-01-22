@@ -1,6 +1,6 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
-import { Usuario } from '../../usuario/entities/usuario.entity';
-import { Carona } from '../../carona/entities/carona.entity';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { Usuario } from '../../Usuario/entities/usuario.entity';
+import { Carona } from '../../Carona/entities/carona.entity';
 
 @Entity({ name: 'reservas' })
 export class Reserva {

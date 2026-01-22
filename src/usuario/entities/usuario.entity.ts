@@ -6,7 +6,9 @@ import {
   Max,
   Min,
 } from 'class-validator';
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Reserva } from '../../Reserva/entities/reserva.entity';
+import { Carona } from '../../Carona/entities/carona.entity';
 
 @Entity({ name: 'tb_usuarios' })
 export class Usuario {
@@ -44,4 +46,10 @@ export class Usuario {
     default: 0,
   })
   nota_avaliacao: number;
+
+  @OneToMany(() => Reserva, (reserva) => reserva.passageiro)
+  reservas: Reserva[];
+
+  @OneToMany(() => Carona, (carona) => carona.motorista)
+  caronas: Carona[];
 }

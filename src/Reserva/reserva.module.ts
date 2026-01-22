@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Reserva } from './entities/reservas.entity';
-import { ReservaService } from './services/reservas.service';
-import { ReservaController } from './controllers/reservas.controller';
+import { ReservaController } from './controllers/reserva.controller';
+import { Reserva } from './entities/reserva.entity';
+import { ReservaService } from './services/reserva.service';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Reserva])],
@@ -10,4 +10,4 @@ import { ReservaController } from './controllers/reservas.controller';
   controllers: [ReservaController],
   exports: [ReservaService],
 })
-export class CaronaModule {}
+export class ReservaModule {}
