@@ -34,7 +34,6 @@ export class Usuario {
   @Column({ length: 11, nullable: false })
   telefone: string;
 
-  @IsNotEmpty()
   @IsNumber({ maxDecimalPlaces: 1 })
   @Min(0)
   @Max(5)
