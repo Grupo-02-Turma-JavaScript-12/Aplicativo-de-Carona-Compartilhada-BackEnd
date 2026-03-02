@@ -14,6 +14,7 @@ import { ApiProperty } from '@nestjs/swagger';
 @Entity({ name: 'tb_usuarios' })
 export class Usuario {
   @PrimaryGeneratedColumn()
+  @ApiProperty()
   id: number;
 
   @IsNotEmpty()

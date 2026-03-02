@@ -32,6 +32,11 @@ export class Carona {
   vagas_disponiveis: number;
 
   @IsNotEmpty()
+  @Column({ length: 255, nullable: false })
+  @ApiProperty()
+  Foto_destino: string;
+
+  @IsNotEmpty()
   @Column({ type: 'decimal', precision: 10, scale: 2, nullable: false })
   @ApiProperty()
   valor: number;
