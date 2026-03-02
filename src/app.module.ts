@@ -1,24 +1,18 @@
 import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { CaronaModule } from './Carona/carona.module';
-import { Carona } from './Carona/entities/carona.entity';
-import { Reserva } from './Reserva/entities/reserva.entity';
-import { ReservaModule } from './Reserva/reserva.module';
-import { Usuario } from './usuario/entities/usuario.entity';
-import { UsuarioModule } from './usuario/usuario.module';
 import { AppController } from './app.controller';
+import { ProdService } from './data/services/prod.service';
+import { CaronaModule } from './Carona/carona.module';
+import { ReservaModule } from './Reserva/reserva.module';
+import { UsuarioModule } from './usuario/usuario.module';
+import { DevService } from './data/services/dev.service';
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: 'localhost',
-      port: 3306,
-      username: 'root',
-      password: 'root',
-      database: 'db_meleva',
-      entities: [Usuario, Carona, Reserva],
-      synchronize: true,
+    TypeOrmModule.forRootAsync({
+      useClass: ProdService,
+      imports: [ConfigModule],
     }),
     UsuarioModule,
     CaronaModule,
