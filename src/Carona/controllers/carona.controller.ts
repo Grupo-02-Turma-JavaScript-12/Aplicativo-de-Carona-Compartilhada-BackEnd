@@ -13,7 +13,9 @@ import {
 } from '@nestjs/common';
 import { Carona } from '../entities/carona.entity';
 import { CaronaService } from '../services/carona.service';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Carona')
 @Controller('/caronas')
 export class CaronaController {
   constructor(private readonly caronaService: CaronaService) {}

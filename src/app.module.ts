@@ -6,6 +6,7 @@ import { Reserva } from './Reserva/entities/reserva.entity';
 import { ReservaModule } from './Reserva/reserva.module';
 import { Usuario } from './usuario/entities/usuario.entity';
 import { UsuarioModule } from './usuario/usuario.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -24,7 +25,7 @@ import { UsuarioModule } from './usuario/usuario.module';
     ReservaModule,
   ],
 
-  controllers: [],
+  controllers: [AppController],
   providers: [],
 })
 export class AppModule {}

@@ -12,7 +12,9 @@ import {
 } from '@nestjs/common';
 import { Reserva } from '../entities/reserva.entity';
 import { ReservaService } from '../services/reserva.service';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Reserva')
 @Controller('/reservas')
 export class ReservaController {
   constructor(private reservaService: ReservaService) {}
