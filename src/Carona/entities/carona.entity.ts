@@ -13,6 +13,7 @@ import { ApiProperty } from '@nestjs/swagger';
 @Entity({ name: 'tb_caronas' })
 export class Carona {
   @PrimaryGeneratedColumn()
+  @ApiProperty()
   id: number;
 
   @IsNotEmpty()
